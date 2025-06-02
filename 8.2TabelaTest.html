@@ -7,33 +7,35 @@
   <link rel="stylesheet" href="duoleaguesytle.css" />
   <style>
     body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: 'Poppins', sans-serif;
-      color: #ccc;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-      background-color: #0a0a1a;
-      background-image:
-        radial-gradient(circle at 30% 40%, #8a2be2, transparent 40%),
-        radial-gradient(circle at 70% 60%, #4a90e2, transparent 40%),
-        linear-gradient(120deg, rgba(138,43,226,0.4) 25%, transparent 25%),
-        linear-gradient(60deg, rgba(74,144,226,0.4) 25%, transparent 25%),
-        repeating-linear-gradient(45deg, #8a2be2 0, #8a2be2 5px, transparent 5px, transparent 20px),
-        repeating-linear-gradient(-45deg, #4a90e2 0, #4a90e2 5px, transparent 5px, transparent 20px);
-      background-blend-mode: screen;
-      background-size:
-        600px 600px,
-        600px 600px,
-        80px 80px,
-        80px 80px,
-        40px 40px,
-        40px 40px;
-      position: relative;
-      overflow-x: hidden;
-    }
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+
+  background-image:
+    radial-gradient(circle at 30% 40%, rgba(138, 43, 226, 0.15), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(74, 144, 226, 0.15), transparent 40%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+    linear-gradient(60deg, rgba(255, 255, 255, 0.03) 25%, transparent 25%),
+    repeating-linear-gradient(45deg, rgba(138, 43, 226, 0.1) 0, rgba(138, 43, 226, 0.1) 5px, transparent 5px, transparent 20px),
+    repeating-linear-gradient(-45deg, rgba(74, 144, 226, 0.1) 0, rgba(74, 144, 226, 0.1) 5px, transparent 5px, transparent 20px);
+  background-color: #0a0a1a;
+  background-size:
+    600px 600px,
+    600px 600px,
+    80px 80px,
+    80px 80px,
+    40px 40px,
+    40px 40px;
+  background-blend-mode: screen;
+  animation: gradientShift 30s ease infinite;
+  position: relative;
+  overflow-x: hidden;
+}
 
     /* Napis "Duale" w tle jako powtarzający się watermark */
     body::before {
